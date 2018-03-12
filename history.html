@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>CHUNG HYEON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="author" content="Chung Hyeon history">
+  	<meta name="description" content="Chung Hyeon Tennis History">
+  	<meta name="keywords" content="Chung Hyeon, chunghyeon, Tennis, tennis, history">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/m/m_sub_header.css" media="only screen and (max-width:375px)">
+    <link rel="stylesheet" href="css/t/t_sub_header.css" media="only screen and (min-width:376px) and (max-width:767px)">
+    <link rel="stylesheet" href="css/sub_header.css" media="only screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/m/m_history_profile.css" media="only screen and (max-width:375px)">
+    <link rel="stylesheet" href="css/t/t_history_profile.css" media="only screen and (min-width:376px) and (max-width:767px)">
+    <link rel="stylesheet" href="css/history_profile.css" media="only screen and (min-width:768px)">
+    <link rel="stylesheet" href="font/font.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/subnav.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerInner">
+        <h1 class="hidden">header</h1>
+        <div class="subNav">
+          <ul>
+            <li class="subNavList on"><a href="history.html">Profile</a></li>
+            <li class="subNavList"><a href="history_moment.html">Moment of winning</a></li>
+            <li class="navLogo">
+                <div class="logo">
+                  <h2 class="hidden">logo</h1>
+                    <a href="index.html" class="logoIcon tablet mobile"><img src="assets/logo-sub.svg" alt="logoIcon"></a>
+                    <div class="tennisBall mobile"><a href=""><img src="assets/btn-tennis_ball.svg" alt="tennisBall"></a></div>
+                </div>
+            </li>
+            <li class="subNavList"><a href="#">Childhood</a></li>
+            <li class="subNavList"><a href="#">Family</a></li>
+          </ul>
+        </div>
+        <div class="navIcon tablet web"><img src="assets/icon_nav.svg" alt=""></div>
+        <script type="text/javascript" src="js/mobileNav.js"></script>
+        </div>
+        <div class="headerNav">
+          <ul class="nav">
+            <li class="navList navFirst"><a href="index.html">HOME</a></li>
+            <li class="navList"><a href="history.html">HISTORY</a></li>
+            <li class="navList"><a href="grand.html">GRAND SLAM</a></li>
+            <li class="navList"><a href="news">NEWS</a></li>
+            <li class="navList"><a href="academy">ACADEMY</a></li>
+            <li class="navList navLast"><a href="conact.html">CONACT</a></li>
+          </ul>
+        </div>
+    </header>
+    <section class="main">
+      <div class="tennisMan">
+        <h3 class="hidden">tennisman</h3>
+        <div class="profileTxt">
+          <h4 class="manTitle">
+            <span>Chung Hyoen</span>
+            <span>1996 mai</span>
+            <span>186cm</span>
+          </h4>
+          <dl class="profile pro01">
+            <dt>ARM CIRCUMFERENCE</dt>
+            <dd>280cm</dd>
+          </dl>
+          <dl class="profile pro02">
+            <dt>THIGH CIRCUMFERENCE</dt>
+            <dd>280cm</dd>
+          </dl>
+          <dl class="profile pro03">
+            <dt>FOOT SIZE</dt>
+            <dd>280cm</dd>
+          </dl>
+        </div>
+        <div class="btnPlay"><img src="assets/btn-play.svg" alt="playBtn"></div>
+      </div>
+      <div class="video">
+        <div id="videoContent">
+          <iframe class="iframe" width="1010" height="622" src="https://www.youtube.com/embed/EsdjC5dsOTM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="btnX"><img src="assets/btn-cancel-1.svg" alt="xBtn"></div>
+        </div>
+        <div class="videoBg"></div>
+      </div>
+      <script type="text/javascript">
+        $('.btnPlay').click(function(){
+          $('.video').css('display','block');
+        });
+        $('.btnX').click(function(){
+          $('.video').css('display','none');
+        });
+      </script>
+    </section>
+  </body>
+</html>

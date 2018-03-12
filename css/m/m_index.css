@@ -1,0 +1,100 @@
+/* slider */
+.container {overflow: hidden; margin: auto;}
+.flexslider {height: 432px; margin: 0 auto}
+.flex-slide { height: 432px; }
+.flex-slide img{width:100%; height:100%;}
+.content {background: #f2f2f2; height: 432px; display: block; margin: 0 auto}
+.flex-viewport {overflow: visible !important}
+.flex-control-paging{display: none;}
+.flex-direction-nav{display: none;}
+/*main*/
+.contents { clear: both; margin: auto;}
+.contentInner { position: relative; }
+/*mach*/
+.mach {
+  margin-top: 29px;
+  font:18px/18px 'Comfortaa', sans-serif;
+  color: #16203C;
+  height: 397px;
+}
+.machScroll { height: 344px; overflow-x: hidden; margin:auto; }
+.mach>h3 { font:bold 18px/36px 'Comfortaa', sans-serif; margin-left:10px; }
+.machDiv{  clear: both; padding-top: 17px; }
+.machDiv>.machLogo { float:left; background: url(../../assets/dummy-main-bnp_open.png) no-repeat;background-size: 72px 78px; background-position-y: 50%; text-align: center; margin:0 17px 0 4%; width: 72px; height: 116px; }
+.machDiv>.machLogo>a {display: block; width: 100%; height: 100%;}
+.machTxt { width: 63%; height: 116px; background: rgba(216,216,216,0.2); float: left; padding-left: 4px; }
+.machDay { margin-top:2px; font:14px/18px 'Comfortaa', sans-serif; }
+.machDay>span:first-child{margin-right: 15px;}
+.machChamp { margin-top:20px; margin-left: -60px; font:bold 14px/18px 'Comfortaa', sans-serif; }
+.machChamp>span{display: block; margin:0 1%; text-align: center; letter-spacing: 1px;}
+.machTxt>a{color:#000000;}
+/*clock*/
+.clock { position:absolute; width:52px; height:83px; left:50%; top: -280px; margin-left: -26px; }
+.clock img { position:absolute; top:0; left:0; }
+.clock img#round{position:absolute; left:50%; margin-left: -4px;  top: 50%; margin-top: -4px; width: 8px; height: 8px; z-index: 10;}
+/*sns*/
+.sns { margin:auto; margin-top: 26px;}
+.snsScroll { height: 344px; overflow-x: hidden; -ms-overflow-style: none;}
+.snsScroll::-webkit-scrollbar {
+display:none;
+}
+
+.instagram {width: 37px; height: 37px; margin: auto; margin-bottom: 16px;}
+.instagram img{ width: 100%; height:100%;}
+#instaPics {
+     overflow: hidden;
+     margin:auto;
+     max-width: 90%;
+}
+.insta-box {
+     position: relative;
+     width: 48%;
+     height: 48%;
+     float: left;
+     margin: 1%;
+}
+.image-layer {
+     overflow: hidden;
+     width: 100%;
+     height: 100%;
+}
+.image-layer img {
+     width: 100%;
+     height: 100%;
+}
+.caption-layer {
+     display: none;
+     position: absolute;
+     top: 0;
+     background: rgba(255,255,255,0.8);
+     height: 100%;
+     width: 100%;
+     padding: 10px;
+     box-sizing: border-box;
+     font-size: 10px;
+     color: #333;
+     text-align:center;
+}
+.insta-caption {
+  font-size:16px; padding-top:80px;
+}
+.insta-likes {
+  text-align:center;
+  font-size:12px; padding-top:10px;
+}
+
+/*column*/
+.colContent{position:relative; padding-top: 50px;}
+.contentInner:after { content:""; position: absolute; top: 50%; left: 50%; margin-left: -155px; width: 310px; height: 2px; background-color: #16203C;}
+.column { position: relative; }
+.colImg { margin: auto; margin-top: 30px; height:319px;}
+.colImg a {display: block; width: 100%; height: 100%;}
+.colImg a img{width: 100%; height: 100%;}
+.colCatego { position:absolute; top:0; left:50%; margin-left:-22px; margin-top:41px; font: bold 14px/18px 'Comfortaa', sans-serif; text-align:center;}
+.colCatego>a{display: block; width:100%; height:100%; color: #bb2c2c;}
+.colTitle { width: 90%; margin: auto; text-align: center; margin-top: 29px; font:18px/24px 'Comfortaa', sans-serif;}
+.colTitle a {color: #000000;}
+.colTxt { width: 90%; margin: auto; padding-bottom: 34px; text-align: justify; margin-top: 29px; font:14px/18px 'Comfortaa', sans-serif;}
+.colTxt a {color: #000000;}
+/*footer*/
+.footer { margin:auto; width: 100%; height: 104px; border-top: 10px solid #F2F2F2; background: url(../../assets/bg-footer.png); background-position: 50% -525px;}

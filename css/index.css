@@ -1,0 +1,105 @@
+/* slider */
+.container {overflow: hidden; width: 1440px; margin: auto;}
+.flexslider {max-width: 1130px; width: 1130px; height: 533px; margin: 0 auto}
+.flex-slide { height: 533px; }
+.flex-slide img{width:100%; height:100%;}
+.content {background: #f2f2f2; max-width: 1130px; height: 533px; display: block; margin: 0 auto}
+.flex-viewport {overflow: visible !important}
+.flex-control-paging{display: none;}
+.flex-direction-nav{display: none;}
+/*main*/
+.contents { clear: both; width: 1130px; margin: auto; border-right: 10px solid #F2F2F2; border-left: 10px solid #F2F2F2; }
+.contentInner { position: relative; height: 477px;}
+/*mach*/
+.mach {
+  margin-top: 42px; position: absolute; left: -119px;
+  font:18px/18px 'Comfortaa', sans-serif;
+  color: #16203C;
+  width: 640px; height: 397px;
+}
+.machScroll { width:640px; height: 344px; overflow-x: hidden; }
+.mach>h3 { font:bold 18px/36px 'Comfortaa', sans-serif; }
+.machDiv{  clear: both; padding-top: 17px; }
+.machDiv>.machLogo { float:left; background: url(../assets/dummy-main-bnp_open.png) no-repeat;background-size: cover; text-align: center; margin:0 17px 0 17px; width: 72px; height: 78px; }
+.machDiv>.machLogo>a {display: block; width: 100%; height: 100%;}
+.machTxt { width: 498px; height: 78px; background: rgba(216,216,216,0.2); float: left; padding-left:11px; }
+.machDay { margin-top:2px; font:14px/18px 'Comfortaa', sans-serif; }
+.machChamp { margin-top:20px; margin-left: 20px; font:18px/24px 'Comfortaa', sans-serif; }
+.machChamp>span{display: inline-block; margin:0 9px;}
+.machTxt>a{color:#000000;}
+/*clock*/
+.clock { position:absolute; width:52px; height:83px; left:50%; top: -42px; margin-left: -26px; }
+.clock img { position:absolute; top:0; left:0; }
+.clock img#round{position:absolute; left:50%; margin-left: -4px;  top: 50%; margin-top: -4px; width: 8px; height: 8px; z-index: 10;}
+.clock:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 83px;
+    width: 2px;
+    height: 400px;
+    background-color: #16203C;
+  }
+/*sns*/
+.sns { position: absolute; right: -103px; margin-top: 42px;}
+.snsScroll {width:590px; height: 344px; overflow-x: hidden; -ms-overflow-style: none;}
+.snsScroll::-webkit-scrollbar {
+display:none;
+}
+
+.instagram {width: 37px; height: 37px; margin: auto; margin-bottom: 16px;}
+.instagram img{ width: 100%; height:100%;}
+#instaPics {
+     max-width: 600px;
+     overflow: hidden;
+}
+.insta-box {
+     position: relative;
+     width: 180px;
+     height: 180px;
+     float: left;
+     margin: 8px;
+}
+.image-layer {
+     overflow: hidden;
+     width: 100%;
+     height: 100%;
+}
+.image-layer img {
+     width: 100%;
+     height: 100%;
+}
+.caption-layer {
+     display: none;
+     position: absolute;
+     top: 0;
+     background: rgba(255,255,255,0.8);
+     height: 100%;
+     width: 100%;
+     padding: 10px;
+     box-sizing: border-box;
+     font-size: 10px;
+     color: #333;
+     text-align:center;
+}
+.insta-caption {
+  font-size:16px; padding-top:80px;
+}
+.insta-likes {
+  text-align:center;
+  font-size:12px; padding-top:10px;
+}
+
+/*column*/
+.contentInner:after { content:""; position: absolute; bottom: 0; left: 50%; margin-left: -200px; width: 400px; height: 2px; background-color: #16203C;}
+.column { position: relative; }
+.colImg { width: 1051px; margin: auto; margin-top: 30px; }
+.colImg a {display: block; width: 100%; height: 100%;}
+.colCatego { margin-top:41px; font: bold 14px/18px 'Comfortaa', sans-serif; text-align:center;}
+.colCatego>a{display: block; width:100%; height:100%; color: #bb2c2c;}
+.colTitle { width: 957px; margin: auto; text-align: center; margin-top: 56px; font:24px/28px 'Comfortaa', sans-serif;}
+.colTitle a {color: #000000;}
+.colTxt { width:750px; margin: auto; padding-bottom: 65px; text-align: center; margin-top: 52px; font:18px/22px 'Comfortaa', sans-serif;}
+.colTxt a {color: #000000;}
+/*footer*/
+.footer { margin:auto; width: 100%; height: 225px; border-top: 10px solid #F2F2F2; background: url(../assets/bg-footer.png); background-size: cover; background-position: 0 -403px;}

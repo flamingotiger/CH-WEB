@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>CHUNG HYEON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="author" content="Chung Hyeon">
+  	<meta name="description" content="Chung Hyeon Tennis">
+  	<meta name="keywords" content="Chung Hyeon, chunghyeon, Tennis, tennis">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/m/m_header.css" media="only screen and (max-width:375px)">
+    <link rel="stylesheet" href="css/t/t_header.css" media="only screen and (min-width:376px) and (max-width:767px)">
+    <link rel="stylesheet" href="css/header.css" media="only screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/m/m_index.css" media="only screen and (max-width:375px)">
+    <link rel="stylesheet" href="css/t/t_index.css" media="only screen and (min-width:376px) and (max-width:767px)">
+    <link rel="stylesheet" href="css/index.css" media="only screen and (min-width:768px)">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+    var windowWidth = $(window).width();
+    $(window).resize(function(){
+      windowWidth = $(window).width();
+
+      $(window).scroll(function(){
+        windowWidth = $(window).width();
+        var scrTop = $(window).scrollTop();
+        if( scrTop >= 78 ){
+          //css변경
+          if(windowWidth > 768){
+            $('.logo').children('.logoIcon').addClass('off');
+            $('.logo').children('.tennisBall').removeClass('off');
+
+          $('.header').css({
+            'background':'url(assets/icon-net.svg) repeat-x, #ffffff',
+            'position':'fixed',
+            'z-index':'1000',
+            'border-top':'0 none',
+            'width':'100%',
+            'top':'0'
+          });
+          $('.headerInner').css({
+            'border-right':'none',
+            'border-left':'none'
+          });
+          $('.logo').css({
+            'height': '40px',
+            'padding': '0',
+          })
+          }
+        }else if( scrTop < 78){
+          //원래상태로
+          if(windowWidth > 768){
+            $('.logo').children('.logoIcon').removeClass('off');
+            $('.logo').children('.tennisBall').addClass('off');
+
+          $('.header').css({
+            'background':'none',
+            'position':'unset',
+            'border-top':'10px solid #F2F2F2',
+          });
+          $('.headerInner').css({
+            'border-right':'10px solid #F2F2F2',
+            'border-left':'10px solid #F2F2F2'
+          });
+          $('.logo').css({
+            'height': '59px',
+            'padding': '5px 0',
+          });}
+          }
+      });//scroll end
+    });
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerInner">
+        <h1 class="hidden">header</h1>
+        <div class="logo">
+          <h2 class="hidden">logo</h1>
+          <a href="#" class="logoIcon tablet mobile"><img src="assets/logo-home.svg" alt="logoIcon1"></a>
+          <a href="#" class="tennisBall web mobile"><img src="assets/btn-tennis_ball.svg" alt="logoIcon2"></a>
+        </div>
+        </div>
+        <div class="navIcon tablet web"><img src="assets/icon_nav.svg" alt=""></div>
+        <script type="text/javascript" src="js/mobileNav.js"></script>
+        <div class="headerNav">
+          <ul class="nav">
+            <li class="navList navFirst"><a href="index.html">HOME</a></li>
+            <li class="navList"><a href="history.html">HISTORY</a></li>
+            <li class="navList"><a href="grand.html">GRAND SLAM</a></li>
+            <li class="navList"><a href="news">NEWS</a></li>
+            <li class="navList"><a href="academy">ACADEMY</a></li>
+            <li class="navList navLast"><a href="conact.html">CONACT</a></li>
+          </ul>
+        </div>
+    </header>
+    <section class="main">
+      <h2 class="hidden">main</h2>
+      <div class="container">
+        <div class="flexslider">
+          <h3 class="hidden">mainImg</h3>
+            <ul class="slides">
+              <li class="flex-slide"><a href="#"><img src="https://static.straitstimes.com.sg/sites/default/files/articles/2018/01/24/21947313.jpg" alt="flexImg01"></a></li>
+              <li class="flex-slide"><a href="#"><img src="https://static.straitstimes.com.sg/sites/default/files/articles/2018/02/02/nz_chung_010218.jpg" alt="flexImg02"></a></li>
+              <li class="flex-slide"><a href="#"><img src="http://www.atpworldtour.com/-/media/images/news/2018/01/22/01/21/chung-melbourne-2018-backhand-day-7.jpg" alt="flexImg03"></a></li>
+              <li class="flex-slide"><a href="#"><img src="http://www.tennis-tourtalk.com/wp-content/uploads/2017/11/DSC_0119.jpg" alt="flexImg04"></a></li>
+              <li class="flex-slide"><a href="#"><img src="http://image.ytn.co.kr/general/jpg/2018/0124/201801241818234212_t.jpg" alt="flexImg04"></a></li>
+            </ul>
+        </div>
+      </div>
+      <script>
+      //flexslider
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider){ },
+        		controlsContainer: $(".custom-controls-container"),
+        		customDirectionNav: $(".custom-navigation a"),
+        		slideshowSpeed:2500,
+        		auto:true,
+      	  	touch:true,
+        });
+      });
+      </script>
+      <section class="contents">
+        <div class="contentInner">
+          <div class="mach">
+            <h3>Chung Hyeon`s mach</h3>
+            <div class="machScroll">
+              <div class="machDiv">
+                <div class="machLogo"><a href="#"></a></div>
+                <div class="machTxt">
+                  <a href="#">
+                    <p class="machDay"><span>BNP PARIBAS OPEN</span><span>2018.03.17</span></p>
+                    <p class="machChamp"><span>Chung Hyeon</span><span>vs</span><span>Chung Hyeon</span></p>
+                  </a>
+                </div>
+              </div>
+              <div class="machDiv">
+                <div class="machLogo"><a href="#"></a></div>
+                <div class="machTxt">
+                  <a href="#">
+                    <p class="machDay"><span>BNP PARIBAS OPEN</span><span>2018.03.17</span></p>
+                    <p class="machChamp"><span>Chung Hyeon</span><span>vs</span><span>Chung Hyeon</span></p>
+                  </a>
+                </div>
+              </div>
+              <div class="machDiv">
+                <div class="machLogo"><a href="#"></a></div>
+                <div class="machTxt">
+                  <a href="#">
+                    <p class="machDay"><span>BNP PARIBAS OPEN</span><span>2018.03.17</span></p>
+                    <p class="machChamp"><span>Chung Hyeon</span><span>vs</span><span>Chung Hyeon</span></p>
+                  </a>
+                </div>
+              </div>
+              <div class="machDiv">
+                <div class="machLogo"><a href="#"></a></div>
+                <div class="machTxt">
+                  <a href="#">
+                    <p class="machDay"><span>BNP PARIBAS OPEN</span><span>2018.03.17</span></p>
+                    <p class="machChamp"><span>Chung Hyeon</span><span>vs</span><span>Chung Hyeon</span></p>
+                  </a>
+                </div>
+              </div>
+              <div class="machDiv">
+                <div class="machLogo"><a href="#"></a></div>
+                <div class="machTxt">
+                  <a href="#">
+                    <p class="machDay"><span>BNP PARIBAS OPEN</span><span>2018.03.17</span></p>
+                    <p class="machChamp"><span>Chung Hyeon</span><span>vs</span><span>Chung Hyeon</span></p>
+                  </a>
+                </div>
+              </div>
+              <div class="machDiv">
+                <div class="machLogo"><a href="#"></a></div>
+                <div class="machTxt">
+                  <a href="#">
+                    <p class="machDay"><span>BNP PARIBAS OPEN</span><span>2018.03.17</span></p>
+                    <p class="machChamp"><span>Chung Hyeon</span><span>vs</span><span>Chung Hyeon</span></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clock">
+        		<img id="clockBg" src="assets/icon-box.svg" alt="clockBg">
+            <img id="round" src="assets/icon-round.svg" alt="clockround">
+        		<img id="hour" src="assets/icon-hour.svg">
+        		<img id="minute" src="assets/icon-minute.svg">
+        	</div>
+          <script type="text/javascript" src="js/clock.js"></script>
+          <div class="sns">
+            <h3 class="hidden">sns</h3>
+            <div class="instagram">
+              <a href="#"><img src="assets/logo-instar.jpg" alt="instagramIcon"></a>
+            </div>
+            <div class="snsScroll">
+              <ul class="instaContainer">
+                <div id="instaPics"></div>
+                <script type="text/javascript" src="js/instagram.js"></script>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <article class="column">
+        <h3 class="hidden">column</h3>
+        <div class="line"></div>
+        <div class="colContent">
+          <div class="colImg"><a href="news.html"><img src="assets/dummy-home-main.png" alt="chung hyeon"></a></div>
+          <div class="colCatego"><a href="news.html">NEWS</a></div>
+          <div class="colTitle"><a href="news.html">
+            Le jeune Asiatique de 21 ans vivra à Melbourne face au Suisse sa première demi-finale de Grand Chelem,
+            ce vendredi matin. Un affrontement surprise au terme d’une ascension express et d’un Open d’Australie étourdissant.
+          </a></div>
+          <div class="colTxt"><a href="news.html">
+            « Bienvenue dans le monde du tennis », a salué John McEnroe. « Une étoile est née », a épinglé le Telegraph.
+            Le tennis, qui voulait voir défiler de nouvelles têtes, a découvert le Sud-Coréen Chung Hyeon (21 ans, 58e mondial),
+            le demi-finaliste le moins bien classé à l’Open d’Australie depuis Marat Safin (86e en 2004). Un phénomène. Au premier coup d’œil,
+            ses lunettes colorées sautent aux yeux. Après ce détail, la solidité et l’explosivité, portées par des cuisses d’airain, sidèrent.
+            « Sa capacitéà bouger et à sortir des coups incroyables même avec un étirement total est exceptionnelle », a, sur Twitter, signé
+            Pat Rafter, l’ancienne légende australienne.
+          </a></div>
+        </div>
+      </article>
+      </section>
+    </section>
+    <footer class="footer">
+
+    </footer>
+  </body>
+</html>

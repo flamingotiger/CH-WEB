@@ -1,0 +1,44 @@
+/*header*/
+.web{display: none;}
+.header {
+  border-top: 10px solid #F2F2F2;
+}
+.logoIcon.off{display: none;}
+.tennisBall.off{display: none;}
+.logo {
+  width: 30px;
+  height: 58px;
+  padding: 5px 0;
+  margin: auto;
+}
+.logo img {width: 100%; height: 100%;}
+.headerInner {
+  border-right: 10px solid #F2F2F2;
+  border-left: 10px solid #F2F2F2;
+  width: 1130px;
+  margin: auto;
+}
+.headerNav {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(119,42,42,1);
+  margin: auto;
+  border-bottom: 1px solid #BA2A2A;
+}
+.nav {
+  width: 1130px;
+  margin: auto;
+}
+.navList.navFirst{ margin-left:64px;}
+.navList.navLast{ margin-right:64px;}
+.navList {
+  text-align: center;
+  float: left;
+  margin: 0 35px;
+  width: 108px;
+  font: 14px/40px 'Comfortaa', sans-serif;
+  opacity: 0.7;
+}
+.navList>a { display: block; width:100%; height:100%; color: #FFFFFF; }

@@ -1,0 +1,61 @@
+.web{display: none;}
+/*on은 js로 css변환*/
+.header.on{
+  background:url(assets/icon-net.svg) repeat-x, #ffffff;
+  position:fixed;
+  z-index:1100;
+  width:100%;
+  top:0;
+}
+.subNavList.subOn{margin: 16px 33px;}
+.headerInner.on{border-right:none; border-left:none;}
+.tennisBall.on{left: 50%; margin-left: -60px;}
+.logoIcon.off{display: none;}
+.logo.on{height: 40px;}
+/*header*/
+.header {
+  background: url(../assets/icon-net.svg);
+
+}
+.logoIcon.off{display: none;}
+.tennisBall.off{left:50%; margin-left:-20px;}
+.logo {
+  height:128px;
+  margin: auto;
+}
+.logo img {width: 100%; height: 100%;}
+.headerInner {
+  position: relative;
+  width: 1130px;
+  margin: auto;
+}
+.tennisBall{position:absolute; left: -10px; top:44px; }
+.subNav{width: 887px; margin: auto; }
+.subNavList.on{border-bottom: 3px solid #DEAB04;}
+.subNavList{ margin: 55px 33px; margin-bottom: 46px; float:left; font: 18px/24px 'Comfortaa', sans-serif;}
+.subNavList>a{display: block; width:100%; height:100%; color:#DEAB04;}
+.navLogo{padding:0; float:left; margin:0 40px;}
+.headerNav {
+  border-top: 2px solid #BA2A2A;
+  clear: both;
+  z-index: 10;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(119,42,42,1);
+  margin: auto;
+  border-bottom: 1px solid #BA2A2A;
+}
+.nav {
+  width: 1130px;
+  margin: auto;
+}
+.navList.navFirst{ margin-left:64px;}
+.navList.navLast{ margin-right:64px;}
+.navList {
+  text-align: center;
+  float: left;
+  margin: 0 35px;
+  width: 108px;
+  font: 14px/40px 'Comfortaa', sans-serif;
+}
+.navList>a { display: block; width:100%; height:100%; color: #FFFFFF; }
