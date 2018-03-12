@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="no-js">
   <head>
     <meta charset="utf-8">
     <title>CHUNG HYEON</title>
@@ -72,6 +72,9 @@
       });//scroll end
     });
     </script>
+    <style type="text/css">
+      .no-js{display: none;}
+    </style>
   </head>
   <body>
     <header class="header">
@@ -234,4 +237,9 @@
 
     </footer>
   </body>
+  <script>
+    $(function(){
+      $('html').removeClass('no-js');
+    });
+  </script>
 </html>
