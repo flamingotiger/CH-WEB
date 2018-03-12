@@ -1,0 +1,14 @@
+.mobile {display: none;}
+.header{position:fixed; height:91px; width:100%; background: url(../../assets/icon-net.svg) -6px; background-size: cover; z-index:2001;}
+.subNavList{opacity:0.5; float:left; margin-right: 30px; margin-top: 16px; font:bold 14px/18px 'Comfortaa', sans-serif;}
+.subNavList.on{opacity:1;}
+.subNavList>a{display: block; width:100%; height:100%;color:#DEAB04;}
+.subNav>ul{margin-left:29px;}
+.navIcon {position:fixed; right:18px; top: 18px; width:48px; height:48px; z-index:3000; cursor: pointer;}
+.navIcon img{width:100%; height:100%;}
+.headerNav{display:none; transition: all 0.2s ease; position:fixed; width:100%; background:#ba2a2a; z-index:2000; height:235px;}
+.headerNav.on{display: block;}
+.nav{margin-top:33px; margin-left:33px;}
+.navList{margin-bottom:20px; width: 140px; font:14px/18px 'Comfortaa', sans-serif;}
+.navList a{display: block; width:100%; height:100%; color:#ffffff;}
+.navList.navLast{position:absolute; bottom:12px; right:18px; text-align: right;}

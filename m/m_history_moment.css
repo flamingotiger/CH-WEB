@@ -1,0 +1,24 @@
+/*history*/
+.main{padding-top:91px;}
+.wrapper01{position:relative; height:441px;}
+.historyImage{position:absolute;}
+.historyImage img{display: block; width:100%; height:100%; border:0 none; vertical-align: bottom; margin-bottom:-1px;}
+.img01{width: 36%;height:241px;left:0;}
+.img02{width: 65%;height: 144px;right:0;}
+.logoCenter{width:36%; position:absolute; height:98px; top:143px; left: 35%; background: #ffffff;}
+.logoCenter>a{display: block; width:100%; height:100%;}
+.logoCenter img {margin:auto; width:38px; height:68px; margin-left: 50%; transform: translate(-17px,0); margin-top: 13px;}
+.img03{width: 72%;height: 158px;bottom: 43px;left: -2px;}
+.img04{width: 29%;height:198px;top: 143px;right:0;}
+.img05{width: 29%;height:100px;bottom:0;right:0;}
+.text01{position:absolute;left:0;bottom:0;width: 71%;height:44px;background:#16203c;}
+dl{text-align: center; color:#ffffff; padding-top:5px; }
+dt{font:bold 14px/18px 'Comfortaa', sans-serif;}
+dd{font:bold 14px/18px 'Comfortaa', sans-serif;}
+
+.wrapper02{position:relative; height:355px;}
+.img06{width: 30%;height:198px;top: 0;left:-1px;}
+.img07{width: 71%;height: 159px;top: -1px;right:0;}
+.img08{width: 72%;height:157px;bottom:0;left:0;}
+.img09{width: 29%;height:198px;bottom: 0;right:0;}
+.text02{position:absolute;right: 28%;top:157px;width: 43%;height: 42px;background:#16203c;}
