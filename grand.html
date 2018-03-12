@@ -33,8 +33,8 @@
         <h1 class="hidden">header</h1>
         <div class="subNav">
           <ul>
-            <li class="subNavList on"><a href="grand.html">Australien Open</a></li>
-            <li class="subNavList"><a href="#">US Open</a></li>
+            <li class="subNavList on"><a href="">Australien Open</a></li>
+            <li class="subNavList"><a href="">US Open</a></li>
             <li class="navLogo">
                 <div class="logo">
                   <h2 class="hidden">logo</h1>
@@ -407,17 +407,17 @@
         </ul>
         <script type="text/javascript">
       		$(function(){
-                var nextClick = $(this).index();
+              var flag = true;
       					$('.thumb').click(function(){
-                  var prevClick = $(this).index();
-                  console.log(prevClick);
-                  console.log('+');
-                  console.log(nextClick);
-                   if(prevClick == nextClick){
+                   if(flag){
                     $('.thumb').children('.thumbImg').removeClass('on');
         						$('.thumb').children('.thumbTxt').removeClass('on');
                     $('.thumbImg').children('.imgBg').removeClass('on');
-                  }else if(prevClick !== nextClick){
+                    $(this).find('.imgBg').addClass('on');
+                    $(this).children('.thumbImg').addClass('on');
+        						$(this).children('.thumbTxt').addClass('on');
+                    flag=false;
+                  }else{
                     $('.thumb').children('.thumbImg').removeClass('on');
         						$('.thumb').children('.thumbTxt').removeClass('on');
                     $('.thumbImg').children('.imgBg').removeClass('on');
@@ -425,7 +425,7 @@
                     $(this).children('.thumbImg').addClass('on');
         						$(this).children('.thumbTxt').addClass('on');
                   }
-                  return nextClick = $(this).index();
+                  flag=false;
       					});
 
       		});
