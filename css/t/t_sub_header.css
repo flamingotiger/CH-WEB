@@ -49,9 +49,11 @@ display:none;
   height: 40px;
 }
 .navList {
+  opacity:0.5;
   text-align: center;
   float: left;
   width: 126px;
   font: 14px/40px 'Comfortaa', sans-serif;
 }
+.navList.on{opacity: 1;}
 .navList>a { display: block; width:100%; height:100%; color: #FFFFFF; }

@@ -52,10 +52,12 @@
 .navList.navFirst{ margin-left:64px;}
 .navList.navLast{ margin-right:64px;}
 .navList {
+  opacity:0.5;
   text-align: center;
   float: left;
   margin: 0 35px;
   width: 108px;
   font: 14px/40px 'Comfortaa', sans-serif;
 }
+.navList.on{opacity: 1;}
 .navList>a { display: block; width:100%; height:100%; color: #FFFFFF; }
