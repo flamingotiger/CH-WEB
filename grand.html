@@ -407,27 +407,42 @@
         </ul>
         <script type="text/javascript">
       		$(function(){
-              var flag = true;
-      					$('.thumb').click(function(){
-                   if(flag){
-                    $('.thumb').children('.thumbImg').removeClass('on');
-        						$('.thumb').children('.thumbTxt').removeClass('on');
-                    $('.thumbImg').children('.imgBg').removeClass('on');
-                    $(this).find('.imgBg').addClass('on');
-                    $(this).children('.thumbImg').addClass('on');
-        						$(this).children('.thumbTxt').addClass('on');
-                    flag=false;
-                  }else{
-                    $('.thumb').children('.thumbImg').removeClass('on');
-        						$('.thumb').children('.thumbTxt').removeClass('on');
-                    $('.thumbImg').children('.imgBg').removeClass('on');
-                    $(this).find('.imgBg').addClass('on');
-                    $(this).children('.thumbImg').addClass('on');
-        						$(this).children('.thumbTxt').addClass('on');
-                  }
-                  flag=false;
-      					});
+            var flag = true;
+            var prevIdx = 0;
+            var t_idx = 0;
+            $('.thumbImg').click(function(){
+              prevIdx = $(this).parent().index();
+              if(flag){
+                console.log('한번클릭');
+                $('.thumbImg').removeClass('on');
+                $('.thumbTxt').removeClass('on');
+                $('.imgBg').removeClass('on');
+                $(this).addClass('on');
+                $(this).next('.thumbTxt').addClass('on');
+                $(this).children('.imgBg').addClass('on');
+                t_idx = $(this).parent().index();
+                flag=false;
 
+              }else if (prevIdx == t_idx) {
+                console.log('같은것들');
+                console.log(prevIdx);
+                console.log(t_idx);
+                $(this).removeClass('on');
+                $(this).next('.thumbTxt').removeClass('on');
+                $(this).children('.imgBg').removeClass('on');
+                flag=true;
+              }else{
+                console.log('다른거 선택 나머지');
+                $('.thumbImg').removeClass('on');
+                $('.thumbTxt').removeClass('on');
+                $('.imgBg').removeClass('on');
+                $(this).addClass('on');
+                $(this).next('.thumbTxt').addClass('on');
+                $(this).children('.imgBg').addClass('on');
+                t_idx = $(this).parent().index();
+                flag=false;
+              }
+            });
       		});
       	</script>
         </div>

@@ -33,8 +33,8 @@
 .champList>.thumb{width: 50%; cursor: pointer; transition: all 0.2s ease;}
 .champList>.thumb img{width:100%; height:100%;}
 .champList>.thumb .thumbImg{position:relative; height:192px; margin-bottom:0; }
-.champList>.thumb .thumbImg.on{margin-bottom:192px;}
-.champList>.thumb .thumbTxt{display: none; z-index: 1500; position:absolute; background: #ffffff; margin-top: -192px;}
+.champList>.thumb .thumbImg.on{margin-bottom:374px;}
+.champList>.thumb .thumbTxt{display: none; z-index: 1500; position:absolute; background: #ffffff; margin-top: -374px;}
 .champList>.thumb .thumbTxt.on{display: block; left:0;}
 
 .imgBg{display: block; z-index: 1000; position:absolute; top:0; left:0; width:100%; height: 100%; background: rgba(0,0,0,0.7);}
